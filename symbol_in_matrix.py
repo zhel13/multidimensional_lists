@@ -7,8 +7,7 @@ for i in range(rows):
     matrix.append(characters)
 
 search_symbol = input()
-position = None
-is_found = False
+position = (0, 0)
 
 for row in range(rows):
     for col in range(rows):
@@ -18,5 +17,5 @@ for row in range(rows):
             print(position)
             exit()
 
-if not is_found:
-    print(f"{search_symbol} does not occur in the matrix")
+
+print(f"{search_symbol} does not occur in the matrix")
