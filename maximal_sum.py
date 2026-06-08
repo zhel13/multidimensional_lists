@@ -5,8 +5,8 @@ maximum_sum = float('-inf')
 sub_matrix = [[], [], []]
 total_sum = 0
 
-for i in range(row-3+1):
-    for j in range(col-3+1):
+for i in range(row-2):
+    for j in range(col-2):
         first_row = [x for x in matrix[i][j:j+3]]
         second_row = [x for x in matrix[i+1][j:j+3]]
         third_row = [x for x in matrix[i+2][j:j+3]]
